@@ -22,17 +22,264 @@ class MyApp extends StatelessWidget {
               Container(
                   padding: EdgeInsets.all(20),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Column(
+                      Row(
                         children: const [
                           Text(
                             "Popular Courses :",
-                            style:
-                                TextStyle(color: Colors.black, fontSize: 18.0),
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
                           )
                         ],
                       )
+                    ],
+                  )),
+              Container(
+                padding: EdgeInsets.all(20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: const [
+                        Icon(
+                          Icons.calendar_month,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          "Science",
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: const [
+                        Icon(
+                          Icons.coffee,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          "Cooking",
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: const [
+                        Icon(
+                          Icons.toll_outlined,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          "Math",
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: const [
+                        Icon(
+                          Icons.bus_alert,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          "Biology",
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: const [
+                        Icon(
+                          Icons.star,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          "Design",
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: const [
+                          Text(
+                            "Continue Learning :",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      )
+                    ],
+                  )),
+              Container(
+                  padding: EdgeInsets.all(20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Card(
+                          color: Colors.lightGreen,
+                          child: Container(
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Icon(Icons.calendar_month),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  const Text(
+                                    "Science",
+                                    style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const Text(
+                                    "Chapter 4",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Icon(
+                                        Icons.lock_clock,
+                                        size: 12,
+                                      ),
+                                      Text(
+                                        " 27 Mins",
+                                        style: TextStyle(fontSize: 8),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))),
+                      Card(
+                          color: Colors.lightGreen,
+                          child: Container(
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Icon(Icons.star),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  const Text(
+                                    "Design",
+                                    style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const Text(
+                                    "Chapter 5",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Icon(
+                                        Icons.lock_clock,
+                                        size: 12,
+                                      ),
+                                      Text(
+                                        " 30 Mins",
+                                        style: TextStyle(fontSize: 8),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))),
+                      Card(
+                          color: Colors.lightGreen,
+                          child: Container(
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Icon(Icons.bus_alert),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  const Text(
+                                    "Biology",
+                                    style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const Text(
+                                    "Chapter 1",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Icon(
+                                        Icons.lock_clock,
+                                        size: 12,
+                                      ),
+                                      Text(
+                                        " 25 Mins",
+                                        style: TextStyle(fontSize: 8),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))),
+                      Card(
+                          color: Colors.lightGreen,
+                          child: Container(
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Icon(Icons.coffee),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  const Text(
+                                    "Cooking",
+                                    style: TextStyle(
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const Text(
+                                    "Chapter 3",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  const Padding(
+                                      padding: EdgeInsets.only(top: 15)),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Icon(
+                                        Icons.lock_clock,
+                                        size: 12,
+                                      ),
+                                      Text(
+                                        " 18 Mins",
+                                        style: TextStyle(fontSize: 8),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))),
                     ],
                   ))
             ],
